@@ -1,0 +1,117 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.game .name {
+  text-align: center;
+  background-color: var(--main-color);
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+  color: white;
+}
+.game .container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.game .container .message {
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  text-align: center;
+  margin: 15px 0;
+}
+.game .container .message select {
+  font-size: 17px;
+  background: var(--main-color);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.game span {
+  font-weight: bold;
+  color: #009688;
+}
+.game span::before {
+  content: "[  ";
+}
+.game span::after {
+  content: " ] ";
+}
+.game .container .start {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #009688;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.game .container .the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--main-color);
+  user-select: none;
+}
+.game .container .input {
+  margin: 15px 0;
+  border: 3px solid var(--main-color);
+  padding: 15px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+  border-radius: 6px;
+  outline: none;
+  caret-color: var(--main-color);
+}
+.game .container .upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.game .container .upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 4px;
+}
+.game .container .control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .good {
+  color: var(--main-color);
+}
+.finish .bad {
+  color: red;
+  text-transform: capitalize;
+}
+
